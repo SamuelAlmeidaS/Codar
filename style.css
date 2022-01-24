@@ -18,7 +18,7 @@ header {
 }
 header h1 {
     font-weight: bold;
-    color: red;
+    color:#D6000D;
     margin: 25px;
 }
 
@@ -31,11 +31,17 @@ header .navbar {
 header .navbar .navbar-list {
     display: inline;
     margin: 25px;
+    font-weight: bold;
+    color: rgba(0,0, 0, 0.75);
+    cursor: pointer;
 }
 
 header .navbar .navbar-list:last-child {
-    background: red;
+    background:#D6000D;
     padding: 10px 45px;
     border-radius: 13px;
     color: white;
+}
+header .navbar .navbar-list:last-child:hover {
+    background: #f10817d0;
 }
