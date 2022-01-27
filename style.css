@@ -56,7 +56,7 @@ header .navbar .navbar-list:last-child:hover {
 .text {
 
     justify-content: center;
-    margin:50px 0 0 58px;
+    margin:50px 0 200px 58px;
     align-items: center;
     display: flex;
     
@@ -87,4 +87,57 @@ header .navbar .navbar-list:last-child:hover {
     font-size: 25px;
     color: white;
     background: #D6000D;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f10817d0;
+}
+
+
+.servicos {
+    /* align-items: center; */
+    width: 100%;
+    display:flex;
+    margin:0 0 0 80px;
+    
+}
+
+.servicos span {
+    margin: 0 0 0 100px;
+}
+
+.servicos img {
+    align-items: right;
+    margin: 0 0 0 52px;
+    
+}
+
+.servico {
+    margin: 85px 90px;
+}
+
+.servico li {
+    list-style-image: url(./img/confirmado-vermelho.png) ;
+    font-size: 25px;
+    font-family: 'roboto',Arial, Helvetica, sans-serif;
+    
+}
+
+.servicos input {
+    margin: 0 0 0 80px;
+    padding: 10px 25px;
+    background-color: rgb(240, 234, 234);
+    border-radius: 10px;
+    border: 1px  rgb(240, 234, 234);
+}
+
+.servicos button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: #D6000D;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: #D6000D;
 }
