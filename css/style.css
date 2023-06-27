@@ -2,19 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Roboto',sans-serif;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
 header {
     display: flex;
     width: 100%;
-
-}
-header {
-    width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 header h1 {
     font-size: 55px;
@@ -28,7 +28,8 @@ header h1 .ponto {
     color: black;
 }
 header .navbar {
-    margin: 25px 25px 100px 25px;
+    display: flex;
+    align-items: center;
 }
 header .navbar .navbar-list {
     font-size: 25px;
@@ -46,20 +47,21 @@ header .navbar .navbar-list:last-child {
     color: white;
     cursor: pointer;
 }
+
 header .navbar .navbar-list:last-child:hover {
     background: #f10817d0;
 }
 
-
-
+.logo {
+    display: flex;
+    align-items: center;
+}
 
 .text {
-
-    justify-content: center;
-    margin:50px 0 200px 58px;
-    align-items: center;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .text img {
@@ -91,26 +93,15 @@ header .navbar .navbar-list:last-child:hover {
 }
 
 .btn:hover {
-    background: #f10817d0;
+    background: #cf1521d0;
 }
-
 
 .servicos {
-    /* align-items: center; */
-    width: 100%;
     display:flex;
-    margin:0 0 0 80px;
-    
+    height: 100vh;
 }
-
-.servicos span {
-    margin: 0 0 0 100px;
-}
-
 .servicos img {
     align-items: right;
-    margin: 0 0 0 52px;
-    
 }
 
 .servico {
@@ -118,26 +109,44 @@ header .navbar .navbar-list:last-child:hover {
 }
 
 .servico li {
-    list-style-image: url(./img/confirmado-vermelho.png) ;
+    display: flex;
+    align-items: center;
     font-size: 25px;
-    font-family: 'roboto',Arial, Helvetica, sans-serif;
-    
+    margin-bottom: 10px;
+}
+
+.servico li .red {
+    background-image: url(../assets/img/confirmado-vermelho.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .servicos input {
-    margin: 0 0 0 80px;
-    padding: 10px 25px;
+    margin-left: 10px;
+    padding: 13px 25px;
     background-color: rgb(240, 234, 234);
     border-radius: 10px;
-    border: 1px  rgb(240, 234, 234);
+    font-size: 19px;
+    border: none;
+    outline: none;
 }
 
-.servicos button {
-    padding: 10px 25px;
+button {
+    padding: 15px 25px;
     border-radius: 10px;
     background-color: #D6000D;
     color: white;
     font-size: 15px;
     font-weight: bold;
-    border: #D6000D;
+    border: none;
+    transition: all ease-in .3s;
+}
+
+button:hover {
+    background-color: #e61826b4;
 }
